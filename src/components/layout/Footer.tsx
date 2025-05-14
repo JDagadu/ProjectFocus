@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-4">
-              <img src="/lovable-uploads/19300772-c85a-4599-8224-2bd0e4138d83.png" alt="Project Focus Logo" className="h-10 w-auto bg-white rounded-full p-1" />
+              <img src={`${import.meta.env.BASE_URL}lovable-uploads/19300772-c85a-4599-8224-2bd0e4138d83.png`} alt="Project Focus Logo" className="h-10 w-auto bg-white rounded-full p-1" />
               <span className="ml-2 text-xl font-bold">Project Focus</span>
             </div>
             <p className="text-gray-300 mb-4">
