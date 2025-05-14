@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import logo from 'public/lovable-uploads/19300772-c85a-4599-8224-2bd0e4138d83.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <NavLink to="/" className="flex-shrink-0 flex items-center">
-              <img src="/lovable-uploads/19300772-c85a-4599-8224-2bd0e4138d83.png" alt="Project Focus Logo" className="h-12 w-auto" />
+              <img src={`${import.meta.env.BASE_URL}lovable-uploads/19300772-c85a-4599-8224-2bd0e4138d83.png`} alt="Project Focus Logo" className="h-12 w-auto" />
               <span className="ml-2 text-xl font-bold text-brand-800">Project Focus</span>
             </NavLink>
           </div>
