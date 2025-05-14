@@ -20,4 +20,10 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    outDir: 'dist', // Output directory
+    rollupOptions: {
+      input: path.resolve(__dirname, 'index.html') // Entry point for the build
+    }
+  }
 }));
